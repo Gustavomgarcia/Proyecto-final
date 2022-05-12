@@ -10,20 +10,15 @@
 
 /****HEADER****/
 
-
-.header{
-    
-    align-items: center;
-    background-color: #14110f; 
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    
-
+.background-nav{
+    background-color: #14110f;
+   
 }
 
+
+
+
+/**HEADER ANTERIOR**/
 .nav{
     display: flex ;
     justify-content: space-between;
@@ -54,9 +49,6 @@
 }
 
 .nav-menu-item{
-    font-size: 18px;
-    margin: 0 50px;
-    line-height: 80px;
     text-transform: uppercase;
     width: max-content;
 
