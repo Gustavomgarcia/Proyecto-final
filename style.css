@@ -31,9 +31,19 @@
     height: 150px;
     list-style: none;
     text-decoration: none;
-     
+    
 }
 
+
+.atp:visited{
+    background-color: #FFE69A;
+    color: #FFE69A;
+
+}
+
+.atp{
+    text-decoration: none;
+}
 
 .footer img{
     width: 40px;
@@ -42,6 +52,7 @@
 
  /*****MAIN INDEX*****/
  .container{
+    width: 100%; 
     margin: 50px;
     padding: 20px;  
     display: grid;
@@ -93,6 +104,12 @@
 
 }
 
+.index2::before{
+    content: '✔';
+    color: forestgreen;
+
+}
+
 
 /****MAIN CLASES****/
 
@@ -114,7 +131,6 @@
     font-size: 20px;
     padding: 20px;
     
-
 }
 
 
@@ -153,19 +169,18 @@
 
 }
 
+.contactos{
+    padding: 20px;
+    margin: 25px;
+    width: 350px;
+    display: grid;
+    grid-template-rows: auto ;
+    grid-template-columns: 100%;
+    column-gap: 20px;
+    row-gap: 50px;
 
-.todos-contacto{
-    border: solid white;
-    color: white;
-    width: 9rem;
-    height: 3rem;
-    margin-top: 4rem;
-    margin-bottom: 8rem;
-    margin-right: 8rem;
-    margin-left: 4rem;
+
 }
-
-
 
 
 
@@ -206,61 +221,19 @@ ul{
 
 /******Mobile*****/
 
-@media (max-width: 450px){
+
     
-    .header{
-        height: 60px;
-    
-    }
-    
-    .logo{
-        text-decoration: none;
-        font-size: 20px;
-        padding: 0 20px;
-        line-height: 60px;
-    }
-    
-    .nav-menu{
+@media (orientation:landscape){
+    .container{
+        display:flex;
         flex-direction: column;
-        align-items: center;
-        margin-right: 20px;
-        background-color: #524A4E;
-        position: fixed;
-        left: 0;
-        top: 60px;
-        width: 100%;
-        padding: 20px 0;
-
-        height: calc(100%- 60px);
-        overflow-y: auto;
-
-        left: 100%;
-        transition: left 0.3s ;
-    
-    }
-    
-    .nav-menu-item{
-        line-height: 70px;
-   
-    }
-    
-    
-    .nav-menu-link:hover{
-        background:none;
-        color: aqua;
-    }
-
-    .nav-toggle{
-        display: block;
-    }
-        
-    .nav-menu_visible{
-        left: 0;
-    }
-    
-    .main.index{
-        width: auto;
-        height: auto;
     }
 }
-    
+
+@media (orientation:vertical){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+}
