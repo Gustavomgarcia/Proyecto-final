@@ -1,0 +1,11 @@
+
+$contacto:(
+    bg-contacto:#FFF6EA,
+    border-contacto: solid,
+    color-contacto: white,
+);
+
+
+.input-contacto{
+    background-color: map-get($contacto, bg-contacto );
+}

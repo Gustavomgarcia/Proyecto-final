@@ -5,9 +5,27 @@
   box-sizing: border-box;
 }
 
+.section-three > div, .section-two > div, .section-one > div {
+  display: flex;
+  align-items: center;
+}
 
+.section-two > div {
+  flex-direction: row-reverse;
+  background-color: #EEEEEE;
+}
+
+.section-three > div img, .section-two > div img, .section-one > div img {
+  width: 400px;
+  height: 400px;
+}
+
+.input-contacto {
+  background-color: #FFF6EA;
+}
 
 /*# sourceMappingURL=style.css.map */
+
 
 /****HEADER****/
 
@@ -49,21 +67,6 @@
   display: grid;
   grid-template-rows: auto auto auto ;
   background-color: white   ;
-}
-
-.section-three > div, .section-two > div, .section-one > div {
-  display: flex;
-  align-items: center;
-}
-
-.section-two > div {
-  flex-direction: row-reverse;
-  background-color: #EEEEEE;
-}
-
-.section-three > div img, .section-two > div img, .section-one > div img {
-  width: 400px;
-  height: 400px;
 }
 
 
