@@ -1,6 +1,8 @@
 /*nesting o anidamiento*/ 
 
 @import '../scss/components/header';
+@import'../scss/components/main';
+@import'../scss/components/footer';
 @import '../scss/base/estilosgenerales';
 @import '../scss/base/colores';
 @import '../scss/base/extends';
@@ -8,3 +10,5 @@
 @import '../scss/base/listas';
 @import '../scss/base/mapas';
 @import'../scss/base/operadores';
+@import'../scss/base/mixin';
+

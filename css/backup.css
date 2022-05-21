@@ -11,15 +11,8 @@
 /****HEADER****/
 
 .background-nav{
-    background-color: #14110f;
-   
+    background-color: #14110f; 
 }
-
-
-
-
-/**HEADER ANTERIOR**/
-
 
 /******FOOTER***/
 
@@ -31,14 +24,11 @@
     height: 150px;
     list-style: none;
     text-decoration: none;
-    
 }
-
 
 .atp:visited{
     background-color: #FFE69A;
     color: #FFE69A;
-
 }
 
 .atp{
@@ -58,13 +48,11 @@
     display: grid;
     grid-template-rows: auto auto auto ;
     background-color: white   ;
-    
-    
 }
+
 .section-one > div{
     display: flex;
     align-items: center;
-
 }
 
 .section-two > div{
@@ -72,42 +60,36 @@
     align-items: center;
     flex-direction: row-reverse;
     background-color: #EEEEEE;
-
 }
 
 .section-three > div{
     display: flex;
     align-items: center;
-
 }
 
 .section-one > div img{
     width: 400px;
     height: 400px;
-
 }
+
 .section-two > div img{
     width: 400px;
     height: 400px;
-
 }
 
 .section-three > div img{
     width: 400px;
     height: 400px;
-
 }
 
 .parrafo-main{
     margin: 170px;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 .index2::before{
     content: '✔';
     color: forestgreen;
-
 }
 
 
@@ -122,15 +104,13 @@
     grid-template-columns: 20% 20%;
     column-gap: 20px;
     row-gap: 50px;
-
-    
 }
+
 .tipo-clases{
     border: solid 1px black;
     background-color: orange;
     font-size: 20px;
     padding: 20px;
-    
 }
 
 
@@ -151,9 +131,6 @@
 }
 
 
-
-
-
 /****MAIN CONTACTO*****/
 
 #mivideo{
@@ -165,8 +142,6 @@
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
     -webkit-filter: grayscale(100%);
-
-
 }
 
 .contactos{
@@ -178,12 +153,7 @@
     grid-template-columns: 100%;
     column-gap: 20px;
     row-gap: 50px;
-
-
 }
-
-
-
 
 
 ul{
@@ -192,16 +162,11 @@ ul{
 
 
 
-
-
 .logo-inicio{
     display: flex;
     justify-content: flex-start
 }
     
-
-
-
 
 .todos-planes{
     background-image: url("imagenes/Planes.jpg");
@@ -214,9 +179,7 @@ ul{
     margin-bottom: 8rem;
     margin-right: 8rem;
     margin-left: 4rem;
-
 }
-
 
 
 /******Mobile*****/
