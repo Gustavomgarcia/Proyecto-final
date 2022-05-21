@@ -1,6 +1,42 @@
 
+
 %flex{
     display: flex;
-    justify-content: center;
     align-items: center;
 }
+
+.section-one > div{
+    @extend %flex;
+}
+
+
+.section-two > div{
+    @extend %flex;
+    flex-direction: row-reverse;
+    background-color: #EEEEEE;
+}
+
+.section-three > div{
+    @extend %flex;
+
+}
+
+%imagenes-index{
+    width: 400px;
+    height: 400px;
+}
+
+.section-one > div img{
+    @extend %imagenes-index;
+ 
+  }
+  
+  .section-two > div img{
+      @extend %imagenes-index;
+   
+  }
+  
+  .section-three > div img{
+    @extend %imagenes-index;
+
+  }
