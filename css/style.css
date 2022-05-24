@@ -84,6 +84,7 @@
 /****MAIN CLASES****/
 
 
+
 .clases{
   padding: 60px;
   margin: 25px;
@@ -95,10 +96,16 @@
 }
 
 .tipo-clases{
-  border: solid 1px black;
-  background-color: orange;
-  font-size: 20px;
-  padding: 20px;
+  height: 400px;
+  width: 400px;
+  object-fit:cover;
+
+}
+.tipo-titulo2{
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.656);
+  width: 400px;
 }
 
 
