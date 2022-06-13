@@ -1,42 +1,45 @@
 
 /*****MAIN INDEX*****/
-.container{
-    width: 100%; 
-    margin: 50px;
-    padding: 20px;  
-    display: grid;
-    grid-template-rows: auto auto auto ;
-    background-color: white   ;
-  }
-  
-  
-  .parrafo-main{
-    margin: 170px;
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  .index2::before{
-    content: '✔';
-    color: forestgreen;
-  }
-  .section-three > div, .section-two > div, .section-one > div {
-    display: flex;
-    align-items: center;
-  }
-  
-  .section-two > div {
-    flex-direction: row-reverse;
-    background-color: #EEEEEE;
-  }
-  
-  .section-three > div img, .section-two > div img, .section-one > div img {
-    width: 400px;
-    height: 400px;
-  }
-  
-  .input-contacto {
-    background-color: #FFF6EA;
-  }
+.main.index {
+  width: 100%;
+}
+.main.index .container {
+  width: 100%;
+  margin: 50px;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  background-color: white;
+}
+
+.parrafo-main {
+  margin: 170px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.index2::before {
+  content: "✔";
+  color: forestgreen;
+}
+
+.section-three > div, .section-two > div, .section-one > div {
+  display: flex;
+  align-items: center;
+}
+
+.section-two > div {
+  flex-direction: row-reverse;
+  background-color: #EEEEEE;
+}
+
+.section-three > div img, .section-two > div img, .section-one > div img {
+  width: 400px;
+  height: 400px;
+}
+
+.input-contacto {
+  background-color: #FFF6EA;
+}
   
   /****MAIN CLASES****/
   
@@ -133,21 +136,3 @@
   }
   
   
-  /******Mobile*****/
-  
-  
-    
-  @media (orientation:landscape){
-    .container{
-        display:flex;
-        flex-direction: column;
-    }
-  }
-  
-  @media (orientation:vertical){
-    .container{
-        display: flex;
-        flex-direction: row;
-    }
-  
-  }

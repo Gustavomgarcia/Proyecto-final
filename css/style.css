@@ -6,7 +6,10 @@
 }
 
 /*****MAIN INDEX*****/
-.container {
+.main.index {
+  width: 100%;
+}
+.main.index .container {
   width: 100%;
   margin: 50px;
   padding: 20px;
@@ -126,19 +129,7 @@ ul {
   margin-left: 4rem;
 }
 
-/******Mobile*****/
-@media (orientation: landscape) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (orientation: vertical) {
-  .container {
-    display: flex;
-    flex-direction: row;
-  }
-}
+
 /*nesting o anidamiento*/
 * {
   margin: 0;
@@ -147,53 +138,74 @@ ul {
 }
 
 /******FOOTER***/
-.footer {
-  display: flex;
-  justify-content: space-around;
-  color: white;
-  background-color: #14110f;
-  height: 150px;
-  list-style: none;
-  text-decoration: none;
-}
-
-.atp:visited {
-  background-color: #FFE69A;
-  color: #FFE69A;
-}
-
-.atp {
-  text-decoration: none;
-}
-
-.footer img {
-  width: 40px;
-  height: 40px;
-}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-.section-three > div, .section-two > div, .section-one > div {
-  display: flex;
-  align-items: center;
+.pie-pagina{
+  width: 100%;
+  background-color: #14110f;
 }
 
-.section-two > div {
-  flex-direction: row-reverse;
-  background-color: #EEEEEE;
+.pie-pagina .grupo-1{
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 20px 0px;
 }
 
-.section-three > div img, .section-two > div img, .section-one > div img {
-  width: 400px;
-  height: 400px;
+.pie-pagina .grupo-1 .box h5{
+  color: white;
+  margin-bottom: 15px;
+  font-size: 15px;
+  text-decoration: none;
+
 }
 
-.input-contacto {
-  background-color: #FFF6EA;
+.pie-pagina .grupo-1 .box li{
+  color: #efefef;
+  margin-bottom: 5px;
+  text-decoration: none;
+  list-style: none;
 }
+
+
+.atp:visited{
+  background-color: #FFE69A;
+  color: #FFE69A;
+}
+.atp{
+  text-decoration: none;
+  list-style: none;
+}
+
+@media screen and (max-width:800px) {
+  .pie-pagina .grupo-1{
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    padding: 15px 0px;
+  }
+  
+  .main.index .container {
+    width: 100%;
+    grid-template-rows: auto auto auto;
+    background-color: white;
+  }
+
+  .parrafo-main {
+    margin: 20px;
+  }
+
+  .section-two{
+    display: none;
+  }
+}
+
+
 
 /*# sourceMappingURL=style.css.map */

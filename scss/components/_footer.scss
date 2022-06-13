@@ -1,33 +1,70 @@
 /*nesting o anidamiento*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  
+
 /******FOOTER***/
 
-.footer{
-    display: flex;
-    justify-content: space-around;
-    color: white;
-    background-color: #14110f;
-    height: 150px;
-    list-style: none;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.pie-pagina{
+  width: 100%;
+  background-color: #14110f;
+}
+
+.pie-pagina .grupo-1{
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 20px 0px;
+}
+
+.pie-pagina .grupo-1 .box h5{
+  color: white;
+  margin-bottom: 15px;
+  font-size: 15px;
+  text-decoration: none;
+
+}
+
+.pie-pagina .grupo-1 .box li{
+  color: #efefef;
+  margin-bottom: 5px;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+.atp:visited{
+  background-color: #FFE69A;
+  color: #FFE69A;
+}
+.atp{
+  text-decoration: none;
+  list-style: none;
+}
+
+@media screen and (max-width:800px) {
+  .pie-pagina .grupo-1{
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    padding: 15px 0px;
   }
   
-  .atp:visited{
-    background-color: #FFE69A;
-    color: #FFE69A;
+  .main.index .container {
+    width: 100%;
+    grid-template-rows: auto auto auto;
+    background-color: white;
   }
-  
-  .atp{
-    text-decoration: none;
+
+  .parrafo-main {
+    margin: 20px;
   }
-  
-  .footer img{
-    width: 40px;
-    height: 40px;
+
+  .section-two{
+    display: none;
   }
+}
